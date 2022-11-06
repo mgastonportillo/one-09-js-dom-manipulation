@@ -17,10 +17,12 @@
 		/>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
+
 	<body>
 		<main>
 			<div class="mainCard">
 				<div class="title"><img src="./assets/rocket.svg" /></div>
+
 				<div>
 					<form action="">
 						<input
@@ -29,12 +31,14 @@
 							placeholder="Task name"
 							class="inputForm"
 							autocomplete="off"
+							data-form-input
 						/>
-						<button type="submit" class="btnCreate">
+						<button type="submit" class="btnCreate" data-form-btn>
 							Agregar <i class="fas fa-plus-circle"></i>
 						</button>
 					</form>
 				</div>
+
 				<ul class="cardsList">
 					<li class="card">
 						<div>
@@ -46,5 +50,7 @@
 				</ul>
 			</div>
 		</main>
+
+		<script src="script.js"></script>
 	</body>
 </html>
