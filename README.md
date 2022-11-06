@@ -1,4 +1,4 @@
-<h1 align="center">ONE - CSS Architecture</h1>
+<h1 align="center">ONE - DOM Manipulation</h1>
 <hr>
 <h2>Preview</h2>
 <a align="center"><img src="https://user-images.githubusercontent.com/106234166/200193483-53d3a444-ac8d-4c0a-bd5f-25081a029f5b.png"></a>
