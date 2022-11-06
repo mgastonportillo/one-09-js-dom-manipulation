@@ -1,30 +1,8 @@
+import completeTaskIcon from "./components/completeTaskIcon.js";
+import removeTaskIcon from "./components/removeTaskIcon.js";
+
 (() => {
 	const btn = document.querySelector("[data-form-btn]");
-
-	const completeTask = () => {
-		const i = document.createElement("i");
-		i.classList.add("far", "fa-check-square", "icon");
-		i.addEventListener("click", completeTaskHandler);
-		return i;
-	};
-
-	const completeTaskHandler = (event) => {
-		const element = event.target;
-		element.classList.toggle("fas");
-		element.classList.toggle("completeIcon");
-		element.classList.toggle("far");
-	};
-
-	const removeTask = () => {
-		const i = document.createElement("i");
-		i.classList.add("fas", "fa-trash-alt", "trashIcon", "icon");
-		i.addEventListener("click", removeTaskHandler);
-		return i;
-	};
-
-	const removeTaskHandler = (event) => {
-		const element = event.target;
-	};
 
 	const createTask = (event) => {
 		event.preventDefault();
@@ -42,11 +20,11 @@
 		taskTitle.classList.add("task");
 		taskTitle.innerText = value;
 
-		taskContent.appendChild(completeTask());
+		taskContent.appendChild(completeTaskIcon());
 		taskContent.appendChild(taskTitle);
 
 		task.appendChild(taskContent);
-		task.appendChild(removeTask());
+		task.appendChild(removeTaskIcon());
 		list.appendChild(task);
 
 		input.value = "";
