@@ -8,7 +8,14 @@ import removeTaskIcon from "./components/removeTaskIcon.js";
 		event.preventDefault();
 
 		const input = document.querySelector("[data-form-input]");
+
+		if (input.value.trim() === "") {
+			alert("Must write a task name");
+			return;
+		}
+
 		const value = input.value;
+
 		const list = document.querySelector("[data-list]");
 
 		const task = document.createElement("li");
